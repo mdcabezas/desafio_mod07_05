@@ -1,6 +1,6 @@
 const app = require("./app.js");
-// Asigna puerto servidor WEB
+// WebServer Port
 const PORT = process.env.PORT || 3000
 
-// Inicia Servidor
+// Start Server
 app.listen(PORT, console.log(`Server on port: ${PORT}`))

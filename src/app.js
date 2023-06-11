@@ -4,12 +4,13 @@ const app = express();
 // Require the routes
 const indexRoutes = require('./routes/index');
 
-// Habilitar cors
+// Enable cors
 app.use(cors());
-// Procesar json
+
+// Process json
 app.use(express.json())
 
-// Agregar rutas
+// Add routes
 app.use('/', indexRoutes);
 
 module.exports = app;
